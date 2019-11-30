@@ -1,0 +1,7 @@
+#配置dubbo的
+dubbo:
+  application:
+    #唯一标识
+    name: cls-service
+  registry:
+    address: zookeeper://192.168.195.188:2181
