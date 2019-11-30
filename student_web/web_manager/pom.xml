@@ -35,6 +35,7 @@
         <dependency>
             <groupId>com.qf</groupId>
             <artifactId>student_service_api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
         <dependency>
