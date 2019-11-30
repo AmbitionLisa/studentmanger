@@ -31,6 +31,8 @@
             <groupId>com.qf</groupId>
             <artifactId>student_service_api</artifactId>
         </dependency>
+
+        <!--打-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
