@@ -6,7 +6,6 @@
 
     <modules>
         <module>student_entity</module>
-        <module>student_entity</module>
         <module>student_service_api</module>
         <module>student_commons</module>
     </modules>
