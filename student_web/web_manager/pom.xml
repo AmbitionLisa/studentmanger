@@ -32,6 +32,18 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!--公共接口的依赖-->
+        <dependency>
+            <groupId>com.qf</groupId>
+            <artifactId>student_service_api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.boot</groupId>
+            <artifactId>dubbo-spring-boot-starter</artifactId>
+            <version>0.2.0</version>
+        </dependency>
+
         <!--springboot 的测试依赖-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

@@ -10,6 +10,7 @@
         <module>student_service_api</module>
         <module>student_commons</module>
     </modules>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
