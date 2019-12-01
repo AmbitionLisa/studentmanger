@@ -3,7 +3,6 @@ package com.qf.serviceimpl;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.qf.dao.StuMapper;
-import com.qf.entity.Classes;
 import com.qf.entity.Student;
 import com.qf.service.IClsService;
 import com.qf.service.StudentService;

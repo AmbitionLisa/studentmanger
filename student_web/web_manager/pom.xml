@@ -50,10 +50,9 @@
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>Unknown</groupId>
+            <groupId>com.qf</groupId>
             <artifactId>student_service_api</artifactId>
-            <version>Unknown</version>
-            <scope>compile</scope>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
     </dependencies>

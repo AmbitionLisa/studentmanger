@@ -11,7 +11,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @MapperScan("com.qf.dao")
 public class WebStudentApplication {
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         SpringApplication.run(WebStudentApplication.class, args);
     }
 
