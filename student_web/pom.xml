@@ -45,13 +45,6 @@
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
-        <!--公共接口的依赖-->
-        <dependency>
-            <groupId>com.qf</groupId>
-            <artifactId>student_service_api</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-
         <!--test测试依赖-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -64,11 +57,13 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
         <dependency>
             <groupId>com.ls</groupId>
             <artifactId>student_web</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+
     </dependencies>
 
     <build>
