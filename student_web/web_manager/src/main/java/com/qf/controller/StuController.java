@@ -52,7 +52,7 @@ public class StuController {
         return "updStu";
     }
     //修改学生
-    @RequestMapping("updStu")
+    @RequestMapping("/updStu")
     public String udpStu(Student Stu){
         Integer i=stuService.udpStu(Stu);
         return "redirect:/stu/list";
