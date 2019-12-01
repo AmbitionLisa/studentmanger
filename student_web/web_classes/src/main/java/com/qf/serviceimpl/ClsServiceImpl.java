@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
-@Service
+@Service(timeout = 500000)
 public class ClsServiceImpl implements IClsService {
 
     @Autowired
@@ -19,4 +19,25 @@ public class ClsServiceImpl implements IClsService {
 
         return clsMapper.selectList(null);
     }
+
+    @Override
+    public Integer addCls(Classes cls) {
+        return clsMapper.insert(cls);
+    }
+
+    @Override
+    public Integer delCls(Integer cid) {
+        return clsMapper.deleteById(cid);
+    }
+
+    @Override
+    public Classes getClsByCid(Integer cid) {
+        return clsMapper.selectById(cid);
+    }
+
+    @Override
+    public Integer udpCls(Classes cls) {
+        return clsMapper.updateById(cls);
+    }
+
 }

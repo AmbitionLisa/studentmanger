@@ -9,4 +9,12 @@ public interface IClsService {
 
 
     List<Classes> getClsList();
+
+    Integer addCls(Classes cls);
+
+    Integer delCls(Integer cid);
+
+    Classes getClsByCid(Integer cid);
+
+    Integer udpCls(Classes cls);
 }

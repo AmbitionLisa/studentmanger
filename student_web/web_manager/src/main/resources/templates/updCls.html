@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymelleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>修改页面</h2>
+<form action="/cls/updCls">
+<input type="hidden" name="id" th:value="${cid}"><br>
+课程名称<input type ="text" name="cname" th:value="${cname}"><br>
+授课老师姓名<input type="text" name="tname" th:value="${tname}"><br>
+    <input type="submit" value="修改">
+</form>
+</body>
+</html>

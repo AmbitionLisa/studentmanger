@@ -5,17 +5,22 @@
     <title>Title</title>
 </head>
 <body>
-<table>
+<table border="1">
     <tr>
         <td>课程id</td>
         <td>课程名称</td>
         <td>授课老师</td>
+        <td>操作</td>
     </tr>
 
     <tr th:each="cls : ${clsList}">
         <td th:text="${cls.cid}">课程id</td>
         <td th:text="${cls.cname}">课程名称</td>
         <td th:text="${cls.tname}">授课老师</td>
+        <td>
+            <a th:href="|cls/getClsByCid/${cls.cid}|">编辑</a>
+            <a th:href="|cls/delCls/${cls.cid}|">删除</a>
+        </td>
     </tr>
 </table>
 </body>
