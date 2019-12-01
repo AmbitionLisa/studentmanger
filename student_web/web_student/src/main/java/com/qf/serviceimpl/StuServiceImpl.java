@@ -6,13 +6,13 @@ import com.qf.dao.StuMapper;
 import com.qf.entity.Classes;
 import com.qf.entity.Student;
 import com.qf.service.IClsService;
-import com.qf.service.IStuService;
+import com.qf.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
 @Service
-public class StuServiceImpl implements IStuService {
+public class StuServiceImpl implements StudentService {
 
     @Autowired
     private StuMapper stuMapper;
@@ -28,8 +28,8 @@ public class StuServiceImpl implements IStuService {
             //当前学生的所属班级
             Integer cid = student.getCid();
             //获得班级信息
-            Classes classes = clsService.queryById(cid);
-            student.setCls(classes);
+            //Classes classes = clsService.queryById(cid);
+            //student.setCls(classes);
         }
 
         return students;

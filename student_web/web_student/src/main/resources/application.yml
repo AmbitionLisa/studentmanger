@@ -2,7 +2,7 @@ dubbo:
   application:
     name: stu-service
   registry:
-    address: zookeeper://192.168.195.188:2181
+    address: zookeeper://192.168.144.155:218
   protocol:
     #自动查找一个可用的端口，默认是20880
     port: -1
