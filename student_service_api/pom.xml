@@ -12,5 +12,12 @@
 
     <artifactId>student_service_api</artifactId>
 
-
+    <dependencies>
+    <!--实体类的依赖-->
+    <dependency>
+        <groupId>com.qf</groupId>
+        <artifactId>student_entity</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    </dependencies>
 </project>

@@ -19,6 +19,7 @@ public class ClsController {
     public String getClsList(ModelMap map){
 
         List<Classes> clsList=clsService.getClsList();
+        map.put("cls",clsList);
         return "clsList";
     }
 }

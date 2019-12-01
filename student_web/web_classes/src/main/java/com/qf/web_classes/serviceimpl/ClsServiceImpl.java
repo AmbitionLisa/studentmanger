@@ -13,6 +13,7 @@ public class ClsServiceImpl implements IClsService {
 
     @Autowired
     private IClsMapper clsMapper;
+
     @Override
     public List<Classes> getClsList() {
 
