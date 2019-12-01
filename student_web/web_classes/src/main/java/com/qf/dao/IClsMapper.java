@@ -1,4 +1,4 @@
-package com.qf.web_classes.dao;
+package com.qf.dao;
 
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
