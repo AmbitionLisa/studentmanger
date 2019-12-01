@@ -6,11 +6,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication(scanBasePackages = "com.qf")
-@DubboComponentScan("com.qf.web_classes.serviceimpl")
-@MapperScan("com.qf.web_classes.dao")
+@DubboComponentScan("com.qf.serviceimpl")
+@MapperScan("com.qf.dao")
 public class WebClassesApplication {
 
     public static void main(String[] args) {
+
         SpringApplication.run(WebClassesApplication.class, args);
     }
 
