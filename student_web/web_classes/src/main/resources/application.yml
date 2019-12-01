@@ -1,11 +1,11 @@
-#ÅäÖÃdubboµÄ
+#é…ç½®dubboçš„
 dubbo:
   application:
     name: web-classes
   registry:
     address: zookeeper://192.168.144.155:2181
   consumer:
-    #Ê×´ÎÆô¶¯²»¼ì²éÌá¹©ÕßÊÇ·ñ´æÔÚ
+    #é¦–æ¬¡å¯åŠ¨ä¸æ£€æŸ¥æä¾›è€…æ˜¯å¦å­˜åœ¨
     check: false
   protocol:
     port: -1
