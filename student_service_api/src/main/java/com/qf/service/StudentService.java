@@ -7,4 +7,12 @@ import java.util.List;
 
 public interface StudentService {
       List<Student> list();
+
+    Integer addStu(Student stu);
+
+    Integer delStu(Integer id);
+
+    Student getStuById(Integer id);
+
+    Integer udpStu(Student stu);
 }

@@ -21,12 +21,16 @@ public class ClsController {
     public String getClsList(Model model){
 
         List<Classes> clsList=clsService.getClsList();
-        System.out.println(clsList);
         model.addAttribute("clsList",clsList);
         return "clsList";
     }
 
     //添加课程
+
+    @RequestMapping("/toAddCls")
+    public String toAddCls(){
+        return "addCls";
+    }
     @RequestMapping("/addCls")
     public String addCls(Classes cls){
         Integer i=clsService.addCls(cls);
@@ -36,20 +40,24 @@ public class ClsController {
     //删除课程
     @RequestMapping("delCls/{cid}")
     public String delCls(@PathVariable("cid") Integer cid){
+        System.out.println(cid);
         Integer i=clsService.delCls(cid);
+        System.out.println(i);
         return "redirect:/cls/list";
     }
+
     //根据id查询课程对象
     @RequestMapping("getClsByCid/{cid}")
-    public String getClsByCid(@PathVariable("cid") Integer cid){
+    public String getClsByCid(@PathVariable("cid") Integer cid,Model model){
         Classes cls=clsService.getClsByCid(cid);
-        return "updateCls";
+        model.addAttribute("cls",cls);
+        return "updCls";
     }
     //修改课程
     @RequestMapping("updCls")
     public String udpCls(Classes cls){
         Integer i=clsService.udpCls(cls);
-        return "";
+        return "redirect:/cls/list";
     }
 
 }

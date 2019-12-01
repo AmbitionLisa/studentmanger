@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymelleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
 <h2>修改页面</h2>
-<form action="/cls/updCls">
-<input type="hidden" name="id" th:value="${cid}"><br>
-课程名称<input type ="text" name="cname" th:value="${cname}"><br>
-授课老师姓名<input type="text" name="tname" th:value="${tname}"><br>
+<form action="/cls/updCls" method="post">
+<input type="hidden" name="cid" th:value="${cls.cid}"><br>
+课程名称<input type ="text" name="cname" th:value="${cls.cname}"><br>
+授课老师姓名<input type="text" name="tname" th:value="${cls.tname}"><br>
     <input type="submit" value="修改">
 </form>
 </body>
