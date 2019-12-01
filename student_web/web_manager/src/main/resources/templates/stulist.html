@@ -7,12 +7,13 @@
 <body>
     <h1>学生列表</h1>
 
-    <table>
+    <table border="1">
         <tr>
             <td>编号</td>
             <td>学生姓名</td>
             <td>年龄</td>
             <td>所属班级</td>
+            <td>操作</td>
         </tr>
 
         <tr th:each="stu : ${stus}">
@@ -20,6 +21,10 @@
             <td th:text="${stu.sname}">学生姓名</td>
             <td th:text="${stu.age}">年龄</td>
             <td th:text="${stu.cls.cname}">所属班级</td>
+            <td>
+                <a th:href="|/stu/getStuById/${stu.id}|"></a>
+                <a th:href="|/stu/delStu/${stu.id}|"></a>
+            </td>
         </tr>
     </table>
 </body>

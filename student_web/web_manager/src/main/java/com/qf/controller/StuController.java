@@ -46,7 +46,7 @@ public class StuController {
 
     //根据id查询学生对象
     @RequestMapping("getStuByCid/{id}")
-    public String getStuByCid(@PathVariable("id") Integer id,Model model){
+    public String getStuById(@PathVariable("id") Integer id,Model model){
         Student Stu=stuService.getStuById(id);
         model.addAttribute("stu",Stu);
         return "updStu";
