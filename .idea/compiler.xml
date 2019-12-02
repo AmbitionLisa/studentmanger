@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="student_entity" />
+        <module name="web_student" />
+        <module name="student_commons" />
+        <module name="student_service_api" />
+        <module name="student_web" />
+        <module name="web_manager" />
+        <module name="web_classes" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="student_commons" target="1.8" />
+      <module name="student_entity" target="1.8" />
+      <module name="student_service_api" target="1.8" />
+      <module name="student_web" target="1.8" />
+      <module name="studentmanger" target="1.8" />
+      <module name="web_classes" target="1.8" />
+      <module name="web_manager" target="1.8" />
+      <module name="web_student" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="student_commons" options="-parameters" />
+      <module name="student_entity" options="-parameters" />
+      <module name="student_service_api" options="-parameters" />
+      <module name="student_web" options="-parameters" />
+      <module name="studentmanger" options="-parameters" />
+      <module name="web_classes" options="-parameters" />
+      <module name="web_manager" options="-parameters" />
+      <module name="web_student" options="-parameters" />
+    </option>
+  </component>
+</project>

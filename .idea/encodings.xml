@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/student_commons" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/student_entity" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/student_service_api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/student_web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/student_web/web_classes" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/student_web/web_classes/src/main/resources/application.yml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/student_web/web_manager" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/student_web/web_student" charset="UTF-8" />
+  </component>
+</project>
